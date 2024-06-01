@@ -19,12 +19,24 @@
             alt="Google"
           />
         </div>
-        <div class="search-box">
-            <form action="https://www.google.com/search"><i class="fa-thin fa-magnifying-glass" id="icon"></i>
-                <input type="text" id="search-box" placeholder="Search" name="q">
-                <i class="fa-thin fa-microphone"></i>
-                <i class="fa-thin fa-camera-retro" id="lens"></i></form>
-        </div>
+        <form action="https://www.google.com/search" method="get">
+          <div class="search-box">
+            <i class="fa-thin fa-magnifying-glass" id="icon"></i>
+            <input type="text" id="search-box" placeholder="Search" name="q">
+            <i class="fa-thin fa-microphone"></i>
+            <i class="fa-thin fa-camera-retro" id="lens"></i>
+          </div>
+          <input role="button" type="submit" value="Google Search" id="button">
+          <input role="button" type="button" onclick="lucky()" value="I'm Feeling Lucky" href="https://doodles.google/" id="button">
+        </form>
       </div>
+
+
+
+      <script>
+        function lucky(){
+          window.location.href = 'https://doodles.google/';
+        }
+      </script>
     <!-- <script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous"></script></body> -->
 </html>
